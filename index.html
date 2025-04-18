@@ -266,7 +266,57 @@
   </div>
 </section>
 <!-- End Dataset Comparison -->
-  
+
+  <!-- Results Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content">
+          <table class="table is-bordered is-striped is-fullwidth">
+            <caption>Performance comparison on ME-VLM test set</caption>
+            <thead>
+              <tr class="has-background-grey-lighter">
+                <th>Model</th>
+                <th>Accuracy (%)</th>
+                <th>F1-Score (%)</th>
+                <th>Inference Time (ms)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>3D-CNN</td>
+                <td>67.5</td>
+                <td>66.8</td>
+                <td>26</td>
+              </tr>
+              <tr>
+                <td>CNN-LSTM</td>
+                <td>72.3</td>
+                <td>71.7</td>
+                <td>38</td>
+              </tr>
+              <tr>
+                <td>TimeSformer</td>
+                <td>78.1</td>
+                <td>77.4</td>
+                <td>61</td>
+              </tr>
+              <tr>
+                <td>CLIP-based</td>
+                <td><strong>83.6</strong></td>
+                <td><strong>82.9</strong></td>
+                <td>45</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Results Section -->
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
