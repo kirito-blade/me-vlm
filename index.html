@@ -129,14 +129,13 @@
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+    <div class="hero-body" style="display: flex; flex-direction: column; align-items: center;">
+      <video poster="" id="tree" autoplay controls muted loop style="width: 100%; max-width: 800px; margin: 0 auto;">
         <!-- Your video here -->
-        <source src="static/images/output_grid.mp4"
-        type="video/mp4">
+        <source src="static/images/output_grid.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-      Instances of the generated micro-expressions by ME-VLM. The prompt is designed based on the respective facial action units (FACS) for each type of emotion.
+        Instances of the generated micro-expressions by ME-VLM. The prompt is designed based on the respective facial action units (FACS) for each type of emotion.
       </h2>
     </div>
   </div>
