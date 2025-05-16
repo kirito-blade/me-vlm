@@ -38,7 +38,7 @@ This dataset is designed for:
 
 Access is granted upon request for academic and non-commercial research purposes. To request access:
 
-1. Fill out the [Google Form / Contact Email]
+1. Contact the corresponding author {tan.peisze@monash.edu} for full access to the generated datasets. 
 2. Include:
    - Institutional affiliation
    - Intended use
