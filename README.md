@@ -1,7 +1,3 @@
-# Project Page for ME-VLM
-
-## Abstract 
-
 ## ME-VLM: Visual-Language Model for Micro-expression Synthesis and Classification
 
 
