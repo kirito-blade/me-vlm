@@ -46,6 +46,31 @@ Access is granted upon request for academic and non-commercial research purposes
 
 ---
 
+---
+
+## 📜 `LICENSE`
+
+```txt
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+You are free to:
+- Share: copy and redistribute the material in any medium or format
+- Adapt: remix, transform, and build upon the material
+
+Under the following terms:
+- Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- NonCommercial: You may not use the material for commercial purposes.
+
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+Full license: https://creativecommons.org/licenses/by-nc/4.0/
+
+## ⚖️ Terms of Use
+- You must use the dataset for **non-commercial** research purposes only.
+- You may not distribute, sell, or use the dataset for any commercial application.
+- You must not attempt to re-identify individuals or create real-person likenesses from the dataset.
+- Cite the dataset in any publications or presentations that use it.
+
 ## 🔍 Citation
 
 If you use this dataset in your research, please cite:
