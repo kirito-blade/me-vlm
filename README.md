@@ -62,13 +62,17 @@ Under the following terms:
 No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
 Full license: https://creativecommons.org/licenses/by-nc/4.0/
+
 ---
+
 ## ⚖️ Terms of Use
 - You must use the dataset for **non-commercial** research purposes only.
 - You may not distribute, sell, or use the dataset for any commercial application.
 - You must not attempt to re-identify individuals or create real-person likenesses from the dataset.
 - Cite the dataset in any publications or presentations that use it.
+
 ---
+
 ## 🔍 Citation
 
 If you use this dataset in your research, please cite:
