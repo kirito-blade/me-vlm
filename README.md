@@ -48,7 +48,6 @@ Access is granted upon request for academic and non-commercial research purposes
 
 ## 📜 `LICENSE`
 
-```txt
 Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
 You are free to:
