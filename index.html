@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="ME-VLM">
-  <meta property="og:title" content="ME-VLM"/>
+  <meta name="description" content="EquiME">
+  <meta property="og:title" content="EquiME"/>
   <meta property="og:description" content="Large Micro-Expression Synthetic Datasets"/>
   <meta property="og:url" content="https://kirito-blade.github.io/me-vlm/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>ME-VLM</title>
+  <title>EquiME</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,15 +52,15 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">ME-VLM: Visual-Language Model for Micro-Expression Synthesis and Analysis</h1>
+            <h1 class="title is-1 publication-title">EquiME: Equitable Micro-Expression Dataset for Cross-Demographic Emotion Recognition</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                 <a href="https://noobasuna.github.io/tpeisze/" target="_blank">Pei-Sze Tan</a>,</span>
-                <span class="author-block">
-                  <a href="https://scholar.google.com/citations?user=zILPiQQAAAAJ&hl=en&oi=ao" target="_blank">Yee-Fan Tan</a>,</span>
                   <span class="author-block">
                     <a href="https://scholar.google.com/citations?hl=en&user=z3WdOZ0AAAAJ" target="_blank">Sailaja Rajanala</a>,</span>
+              <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=zILPiQQAAAAJ&hl=en&oi=ao" target="_blank">Yee-Fan Tan</a>,</span>
                     <span class="author-block">
                 <a href="https://scholar.google.com/citations?user=wR84XY1kACcC&hl=en&oi=ao" target="_blank">Raphael C.W Phan</a>,</span>
                     <span class="author-block">
@@ -134,7 +134,7 @@
         <source src="static/images/output_grid.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Instances of the generated micro-expressions by ME-VLM. The prompt is designed based on the respective facial action units (FACS) for each type of emotion.
+        Instances of the generated micro-expressions by EquiME. The prompt is designed based on the respective facial action units (FACS) for each type of emotion.
       </h2>
     </div>
   </div>
@@ -152,7 +152,7 @@
          </figure>
         <div class="content has-text-justified">
           <p>
-          Micro-expression (ME) recognition is a challenging task due to the subtle and transient nature of these facial movements. Existing real-world ME datasets are limited in scale and diversity, hindering the development of robust recognition models. In this work, we introduce ME-VLM, a large-scale synthetic dataset for micro-expression analysis, generated using the image-to-video model. By leveraging a structured causal modeling approach, we employ Facial Action Units (AUs) as intermediate representations that drive the generation of realistic ME sequences. Our dataset enables the training of deep learning models for ME classification, and we demonstrate its effectiveness by fine-tuning a CLIP-based model for emotion recognition. Experimental results show that training on ME-VLM, followed by cross-validation evaluation, significantly improves classification accuracy compared to existing datasets. The controlled generation process ensures high fidelity, diverse identity coverage, and precise emotion annotation, making ME-VLM a valuable resource for advancing micro-expression research. 
+          Micro-expression (ME) recognition is a challenging task due to the subtle and transient nature of these facial movements. Existing real-world ME datasets are limited in scale and diversity, hindering the development of robust recognition models. In this work, we introduce EquiME, a large-scale synthetic dataset for micro-expression analysis, generated using the image-to-video model. By leveraging a structured causal modeling approach, we employ Facial Action Units (AUs) as intermediate representations that drive the generation of realistic ME sequences. Our dataset enables the training of deep learning models for ME classification, and we demonstrate its effectiveness by fine-tuning a CLIP-based model for emotion recognition. Experimental results show that training on EquiME, followed by cross-validation evaluation, significantly improves classification accuracy compared to existing datasets. The controlled generation process ensures high fidelity, diverse identity coverage, and precise emotion annotation, making EquiME a valuable resource for advancing micro-expression research. 
           </p>
         </div>
       </div>
@@ -168,9 +168,9 @@
        <h2 class="title is-3">Model Architecture</h2>
        <div class="content">
          <figure class="image">
-           <img src="static/images/mevlm_arch.png" alt="ME-VLM Model Architecture">
+           <img src="static/images/mevlm_arch.png" alt="EquiME Model Architecture">
            <figcaption>
-             Figure 1: Architecture of our proposed ME-VLM framework. The left side illustrates the generation process using Facial Action Units (AUs) as intermediate representations, while the right side shows the CLIP-based classification pipeline.
+             Figure 1: Architecture of our proposed EquiME framework. The left side illustrates the generation process using Facial Action Units (AUs) as intermediate representations, while the right side shows the CLIP-based classification pipeline.
            </figcaption>
          </figure>
        </div>
@@ -187,13 +187,13 @@
         <h2 class="title is-3">Dataset Comparison</h2>
         <div class="content">
           <table class="table is-bordered is-striped is-fullwidth">
-            <caption>Comparison between existing real human ME datasets, MiE-X (synthetic dataset), and ME-VLM (ours)</caption>
+            <caption>Comparison between existing real human ME datasets, MiE-X (synthetic dataset), and EquiME (ours)</caption>
             <thead>
               <tr class="has-background-grey-lighter">
                 <th>Characteristics</th>
                 <th>Real Human ME Datasets</th>
                 <th>MiE-X Dataset</th>
-                <th>ME-VLM (Ours)</th>
+                <th>EquiME (Ours)</th>
               </tr>
             </thead>
             <tbody>
@@ -276,7 +276,7 @@
                 <td>Synthetic</td>
               </tr>
               <tr>
-                <td colspan="4" class="is-italic">Note: ME-VLM offers comprehensive temporal information similar to real datasets but with much larger scale and balanced emotion distribution</td>
+                <td colspan="4" class="is-italic">Note: EquiME offers comprehensive temporal information similar to real datasets but with much larger scale and balanced emotion distribution</td>
               </tr>
             </tbody>
           </table>
@@ -295,7 +295,7 @@
         <h2 class="title is-3">Results</h2>
         <div class="content">
           <table class="table is-bordered is-striped is-fullwidth">
-            <caption>Performance comparison on ME-VLM test set</caption>
+            <caption>Performance comparison on EquiME test set</caption>
             <thead>
               <tr class="has-background-grey-lighter">
                 <th>Model</th>
@@ -343,8 +343,8 @@
       <h2 class="title">BibTeX</h2>
       <pre><code>
   @article{tan2025me-vlm,
-  title={ME-VLM: Visual-Language Model for Micro-expression Synthesis and Classification},
-  author={Tan, Pei-Sze and Tan, Yee-Fan and Rajanala, Sailaja and Phan, Raphael C.W and Ong, Huey-Fang},
+  title={EquiME: Equitable Micro-Expression Dataset for Cross-Demographic Emotion Recognition},
+  author={Tan, Pei-Sze and Rajanala, Sailaja and Tan, Yee-Fan and Phan, Raphael C.W and Ong, Huey-Fang},
   journal={arXiv preprint},
   year={2025},
   archivePrefix={arXiv},
