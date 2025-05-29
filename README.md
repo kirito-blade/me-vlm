@@ -1,12 +1,12 @@
-# ME-VLM: Visual-Language Model for Micro-expression Synthesis and Classification
+# EquiME: Equitable Micro-Expression Dataset for Cross-Demographic Emotion Recognition
 
-**ME-VLM** is a synthetic video dataset generated using the LTX-Video image-to-video model. It uses high-quality facial images from the CelebA-HQ dataset as input and produces short video clips accompanied by automatically generated captions. The dataset is intended for non-commercial academic research in multimodal learning, video generation, and captioning.
+**EquiME**, a large-scale synthetic dataset for micro-expression analysis, generated using the image-to-video model. By leveraging a structured causal modeling approach, we employ Facial Action Units (AUs) as intermediate representations that drive the generation of realistic ME sequences.
 
 ---
 
 ## Dataset Summary
 
-- **Number of Samples**: 100,000 video clips  
+- **Number of Samples**: 75,000 video clips  
 - **Video Format**: MP4, 6 seconds, 24 FPS  
 - **Resolution**: 512 × 512 pixels  
 - **Caption Format**: JSON  
