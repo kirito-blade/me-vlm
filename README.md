@@ -52,7 +52,7 @@ The ME-VLM dataset addresses critical limitations in micro-expression research b
 
 | Parameter | Specification |
 |-----------|---------------|
-| **Total Samples** | 100,000 video sequences |
+| **Total Samples** | 75,000 video sequences |
 | **Video Format** | MP4 (H.264 codec) |
 | **Resolution** | 512 × 512 pixels |
 | **Frame Rate** | 24 FPS |
