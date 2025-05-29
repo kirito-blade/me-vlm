@@ -141,43 +141,39 @@
 </section>
 <!-- End teaser video -->
 
-<!-- Paper abstract -->
+<!-- Paper abstract with two side-by-side images -->
 <section class="section">
   <div class="container is-max-desktop">
+    <!-- Images Row -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-half">
+        <figure class="image is-4by3">
+          <img src="static/images/intro_mevlm_cropped-1.png" alt="Intro Image">
+          <figcaption>Introductory Illustration of EquiME</figcaption>
+        </figure>
+      </div>
+      <div class="column is-half">
+        <figure class="image is-4by3">
+          <img src="static/images/mevlm_arch.png" alt="EquiME Model Architecture">
+          <figcaption>Pipeline for Synthetic ME Dataset Generation</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Abstract Content -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
-        <figure class="image">
-          <img src="static/images/intro_mevlm_cropped-1.png" alt="Intro">
-         </figure>
         <div class="content has-text-justified">
           <p>
-        Micro-expression (ME) recognition is a challenging task due to the subtle and transient nature of these facial movements. Existing real-world ME datasets are limited in scale, diversity, and emotional breadth, hindering the development of robust recognition models. In this work, we introduce \textbf{EquiME}, a large-scale synthetic dataset for micro-expression analysis, generated using the image-to-video model. By leveraging a structured causal modeling approach, we employ Facial Action Units (AUs) as intermediate representations that drive the generation of realistic ME sequences. Our dataset achieves significant demographic diversity (55.6% women, 44.4% men; representation across six racial groups) while simultaneously capturing five distinct emotion categories—a balance rarely achieved in real-world data collection where recruiting diverse participants capable of expressing all target emotions remains challenging. Experimental results show that training on EquiME, followed by cross-validation evaluation, significantly improves classification accuracy compared to existing datasets. This paper presents a streamlined pipeline for generating synthetic micro-expression datasets, designed to be accessible to users without a computer science background.          </p>
+            Micro-expression (ME) recognition is a challenging task due to the subtle and transient nature of these facial movements. Existing real-world ME datasets are limited in scale, diversity, and emotional breadth, hindering the development of robust recognition models. In this work, we introduce <strong>EquiME</strong>, a large-scale synthetic dataset for micro-expression analysis, generated using the image-to-video model. By leveraging a structured causal modeling approach, we employ Facial Action Units (AUs) as intermediate representations that drive the generation of realistic ME sequences. Our dataset achieves significant demographic diversity (55.6% women, 44.4% men; representation across six racial groups) while simultaneously capturing five distinct emotion categories—a balance rarely achieved in real-world data collection where recruiting diverse participants capable of expressing all target emotions remains challenging. Experimental results show that training on EquiME, followed by cross-validation evaluation, significantly improves classification accuracy compared to existing datasets. This paper presents a streamlined pipeline for generating synthetic micro-expression datasets, designed to be accessible to users without a computer science background.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
-<!-- Model Architecture Figure -->
-<section class="section hero is-light">
- <div class="container is-max-desktop">
-   <div class="columns is-centered has-text-centered">
-     <div class="column is-four-fifths">
-       <h2 class="title is-3">Model Architecture</h2>
-       <div class="content">
-         <figure class="image">
-           <img src="static/images/mevlm_arch.png" alt="EquiME Model Architecture">
-           <figcaption>
-            Pipeline of the generation of synthetic ME datasets with text-to-video model from the source images.
-           </figcaption>
-         </figure>
-       </div>
-     </div>
-   </div>
- </div>
-</section>
-<!-- End Model Architecture Figure -->
+<!-- End Paper abstract with images -->
 <!-- Dataset Comparison -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
