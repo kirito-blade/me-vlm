@@ -284,56 +284,268 @@
 </section>
 <!-- End Dataset Comparison -->
 
-  <!-- Results Section -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Results</h2>
-        <div class="content">
-          <table class="table is-bordered is-striped is-fullwidth">
-            <caption>Performance comparison on EquiME test set</caption>
-            <thead>
-              <tr class="has-background-grey-lighter">
-                <th>Model</th>
-                <th>Accuracy (%)</th>
-                <th>F1-Score (%)</th>
-                <th>Inference Time (ms)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>3D-CNN</td>
-                <td>67.5</td>
-                <td>66.8</td>
-                <td>26</td>
-              </tr>
-              <tr>
-                <td>CNN-LSTM</td>
-                <td>72.3</td>
-                <td>71.7</td>
-                <td>38</td>
-              </tr>
-              <tr>
-                <td>TimeSformer</td>
-                <td>78.1</td>
-                <td>77.4</td>
-                <td>61</td>
-              </tr>
-              <tr>
-                <td>CLIP-based</td>
-                <td><strong>83.6</strong></td>
-                <td><strong>82.9</strong></td>
-                <td>45</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Performance Results</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .strong-result {
+            font-weight: bold;
+        }
+        .section {
+            padding: 2rem 1.5rem;
+        }
+        .table caption {
+            caption-side: top;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #363636;
+        }
+    </style>
+</head>
+<body>
+    <div class="container is-max-desktop">
+        <section class="section">
+            <div class="columns is-centered has-text-centered">
+                <div class="column">
+                    <h1 class="title is-2">Model Performance Results</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3-Class Classification Results -->
+        <section class="section">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">3-Class Classification Results</h2>
+                    <div class="content">
+                        <table class="table is-bordered is-striped is-fullwidth">
+                            <caption>Performance comparison on EquiME dataset (3-class)</caption>
+                            <thead>
+                                <tr class="has-background-grey-lighter">
+                                    <th>Model</th>
+                                    <th>Accuracy</th>
+                                    <th>F1-Score</th>
+                                    <th>Mean Confidence</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ST-CNN</td>
+                                    <td><strong>0.630</strong></td>
+                                    <td>0.49</td>
+                                    <td>0.6031</td>
+                                </tr>
+                                <tr>
+                                    <td>ResNet3D (3c)</td>
+                                    <td>0.481</td>
+                                    <td>0.61</td>
+                                    <td>0.597</td>
+                                </tr>
+                                <tr>
+                                    <td>Simple3DCNN</td>
+                                    <td>0.489</td>
+                                    <td><strong>0.63</strong></td>
+                                    <td><strong>0.679</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>MobileNet-Hybrid (3c)</td>
+                                    <td>0.538</td>
+                                    <td><strong>0.63</strong></td>
+                                    <td>0.627</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5-Class Classification Results -->
+        <section class="section">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">5-Class Classification Results</h2>
+                    <div class="content">
+                        <table class="table is-bordered is-striped is-fullwidth">
+                            <caption>Performance comparison on EquiME dataset (5-class)</caption>
+                            <thead>
+                                <tr class="has-background-grey-lighter">
+                                    <th>Model</th>
+                                    <th>Accuracy</th>
+                                    <th>F1-Score</th>
+                                    <th>Mean Confidence</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ResNet3D (5c)</td>
+                                    <td>0.420</td>
+                                    <td>0.36</td>
+                                    <td><strong>0.563</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>MobileNet-Hybrid (5c)</td>
+                                    <td><strong>0.470</strong></td>
+                                    <td><strong>0.45</strong></td>
+                                    <td>0.3591</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cross-Dataset SAMM Results -->
+        <section class="section">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Cross-Dataset Evaluation: SAMM Test Set</h2>
+                    <div class="content">
+                        <table class="table is-bordered is-striped is-fullwidth">
+                            <caption>F1-Score comparison across different training sources (Test on SAMM)</caption>
+                            <thead>
+                                <tr class="has-background-grey-lighter">
+                                    <th>Model</th>
+                                    <th>CAS→SAM</th>
+                                    <th>MiE-X→SAM</th>
+                                    <th>Ours→SAM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ST-CNN</td>
+                                    <td>0.526</td>
+                                    <td>0.490</td>
+                                    <td>0.489</td>
+                                </tr>
+                                <tr>
+                                    <td>3DCNN</td>
+                                    <td><strong>0.562</strong></td>
+                                    <td>0.085</td>
+                                    <td>0.488</td>
+                                </tr>
+                                <tr>
+                                    <td>ResNet</td>
+                                    <td>0.518</td>
+                                    <td>0.482</td>
+                                    <td>0.481</td>
+                                </tr>
+                                <tr>
+                                    <td>MobileNet</td>
+                                    <td>0.501</td>
+                                    <td>0.466</td>
+                                    <td><strong>0.537</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cross-Dataset CASME2 Results -->
+        <section class="section">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Cross-Dataset Evaluation: CASME2 Test Set</h2>
+                    <div class="content">
+                        <table class="table is-bordered is-striped is-fullwidth">
+                            <caption>F1-Score comparison across different training sources (Test on CASME2)</caption>
+                            <thead>
+                                <tr class="has-background-grey-lighter">
+                                    <th>Model</th>
+                                    <th>SAMM→CAS</th>
+                                    <th>MiE-X→CAS</th>
+                                    <th>Ours→CAS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ST-CNN</td>
+                                    <td>0.454</td>
+                                    <td>0.525</td>
+                                    <td>0.486</td>
+                                </tr>
+                                <tr>
+                                    <td>3DCNN</td>
+                                    <td>0.326</td>
+                                    <td>0.524</td>
+                                    <td>0.493</td>
+                                </tr>
+                                <tr>
+                                    <td>ResNet</td>
+                                    <td>0.474</td>
+                                    <td>0.405</td>
+                                    <td>0.477</td>
+                                </tr>
+                                <tr>
+                                    <td>MobileNet</td>
+                                    <td>0.494</td>
+                                    <td><strong>0.526</strong></td>
+                                    <td>0.490</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Summary -->
+        <section class="section">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Performance Summary</h2>
+                    <div class="content">
+                        <table class="table is-bordered is-striped is-fullwidth">
+                            <caption>Best performing models across different evaluation categories</caption>
+                            <thead>
+                                <tr class="has-background-grey-lighter">
+                                    <th>Category</th>
+                                    <th>Best F1-Score</th>
+                                    <th>Best Accuracy</th>
+                                    <th>Best Model</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>3-Class Classification</td>
+                                    <td><strong>0.63</strong></td>
+                                    <td><strong>0.630</strong></td>
+                                    <td>Simple3DCNN / MobileNet-Hybrid</td>
+                                </tr>
+                                <tr>
+                                    <td>5-Class Classification</td>
+                                    <td><strong>0.45</strong></td>
+                                    <td><strong>0.470</strong></td>
+                                    <td>MobileNet-Hybrid (5c)</td>
+                                </tr>
+                                <tr>
+                                    <td>SAMM Cross-Dataset</td>
+                                    <td><strong>0.562</strong></td>
+                                    <td>-</td>
+                                    <td>3DCNN (CAS→SAM)</td>
+                                </tr>
+                                <tr>
+                                    <td>CASME2 Cross-Dataset</td>
+                                    <td><strong>0.526</strong></td>
+                                    <td>-</td>
+                                    <td>MobileNet (MiE-X→CAS)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-  </div>
-</section>
-<!-- End Results Section -->
+</body>
+</html>
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
