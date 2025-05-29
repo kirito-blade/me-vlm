@@ -1,0 +1,46 @@
+{
+  "paths": {
+    "root_video_dir": "/home/tpei0009/LTX-Video/hq_emotion/",
+    "weights_path": "/home/tpei0009/micro-expression-recognition/weights_3class/weights-improvement-{epoch:02d}-{val_accuracy:.2f}.hdf5",
+    "results_dir": "/home/tpei0009/micro-expression-recognition/results_3class",
+    "images_npy": "/home/tpei0009/micro-expression-recognition/microexpstcnn_images_3class.npy",
+    "labels_npy": "/home/tpei0009/micro-expression-recognition/microexpstcnn_labels_3class.npy",
+    "categorical_labels_npy": "/home/tpei0009/micro-expression-recognition/microexpstcnnlabels_3class.npy",
+    "trainingsamples_npy": "/home/tpei0009/micro-expression-recognition/trainingsamples_3class.npy"
+  },
+  "training": {
+    "batch_size": 16,
+    "epochs": 100,
+    "learning_rate": 0.0001,
+    "test_split": 0.2,
+    "random_seed": 4
+  },
+  "model": {
+    "type": "mobilenet",
+    "image_rows": 64,
+    "image_columns": 64,
+    "image_depth": 96
+  },
+  "emotions": {
+    "paths": {
+      "anger": "/home/tpei0009/MMNet/sam_emo/anger",
+      "happiness": "/home/tpei0009/MMNet/sam_emo/happiness",
+      "disgust": "/home/tpei0009/MMNet/sam_emo/disgust",
+      "sadness": "/home/tpei0009/MMNet/sam_emo/sadness",
+      "surprise": "/home/tpei0009/MMNet/sam_emo/surprise"
+    },
+    "mapping": {
+      "positive": 0,
+      "negative": 1,
+      "surprise": 2
+    }
+  },
+  "emotion_grouping": {
+    "happiness": "positive",
+    "anger": "negative",
+    "fear": "negative",
+    "disgust": "negative",
+    "sadness": "negative",
+    "surprise": "surprise"
+  }
+} 
