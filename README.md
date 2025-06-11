@@ -259,35 +259,6 @@ The dataset is available for academic research purposes following proper access 
 3. Agree to ethical usage terms
 4. Cite the work in resulting publications
 
-### Research Applications
-
-**Recommended Use Cases**:
-- Micro-expression recognition algorithm development
-- Synthetic data augmentation for real datasets
-- Multimodal learning research
-- Video generation model evaluation
-- Fairness and bias analysis in facial recognition systems
-
-## Evaluation Protocols
-
-### Benchmark Datasets
-The framework supports evaluation against established micro-expression datasets:
-- **SAMM**: Spontaneous Actions and Micro-Movements Dataset
-- **SMIC**: Spontaneous Micro-expression Corpus
-- **MIEX**: Micro-Expression Database
-
-### Evaluation Metrics
-- **Classification Accuracy**: Standard multi-class accuracy measures
-- **F1-Score**: Harmonic mean of precision and recall
-- **Cohen's Kappa**: Inter-rater agreement coefficient
-- **AUC-ROC**: Area under receiver operating characteristic curve
-
-### Cross-Dataset Evaluation
-Protocols for assessing generalization across synthetic and real datasets:
-1. Train on ME-VLM, test on real datasets
-2. Real-to-synthetic domain adaptation
-3. Mixed training regime evaluation
-
 ---
 
 ## Ethical Considerations
@@ -296,11 +267,6 @@ Protocols for assessing generalization across synthetic and real datasets:
 - All source images are from publicly available, ethically-collected datasets
 - No personally identifiable information is retained
 - Synthetic generation ensures no direct correspondence to real individuals
-
-### Bias Mitigation
-- Demographic balance maintained across emotion categories
-- Regular bias auditing using established fairness metrics
-- Transparent reporting of dataset limitations and biases
 
 ### Responsible Use
 Researchers utilizing this dataset must:
