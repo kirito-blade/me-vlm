@@ -80,23 +80,7 @@ ME-VLM/
 │   ├── surprise/
 │   ├── fear/
 │   └── anger/
-├── documentation/
-│   ├── generation_protocol.md
-│   ├── evaluation_guidelines.md
-│   └── annotation_schema.json
-└── statistics/
-    ├── demographic_distribution.csv
-    ├── quality_metrics.csv
-    └── dataset_summary.json
 ```
-
-### Naming Convention
-
-Video files follow the systematic naming pattern:
-```
-[gender]_[subject_id]_[sequence_number].mp4
-```
-
 Where:
 - `gender`: Demographic identifier (m/f)
 - `subject_id`: Unique subject identifier from source dataset
@@ -110,7 +94,7 @@ Each video is accompanied by comprehensive metadata including:
 - **Technical Metadata**: File size, bitrate, duration, frame count
 - **Generation Parameters**: Model configuration, prompt templates, random seeds
 - **Quality Metrics**: PSNR, SSIM, perceptual quality scores
-- **Action Unit Annotations**: Facial muscle movement indicators
+- **Generating Prompt**: Facial muscle movement indicators
 
 ---
 
