@@ -207,7 +207,7 @@ Emotion-specific prompts were carefully crafted to ensure consistent and realist
 ## System Requirements
 
 ### Hardware Requirements
-- **GPU**: NVIDIA GPU with ≥8GB VRAM (RTX 3080/4070 or equivalent)
+- **GPU**: NVIDIA GPU with ≥8GB VRAM (A100 or equivalent)
 - **RAM**: ≥32GB system memory
 - **Storage**: ≥500GB available space for full dataset
 - **CPU**: Multi-core processor (≥8 cores recommended)
@@ -225,7 +225,7 @@ Emotion-specific prompts were carefully crafted to ensure consistent and realist
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/[username]/me-vlm.git
+git clone https://github.com/[kirito-blade]/me-vlm.git
 cd me-vlm
 ```
 
