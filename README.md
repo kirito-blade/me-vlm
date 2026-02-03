@@ -328,11 +328,7 @@ We gratefully acknowledge:
 
 ## Contact Information
 
-### Corresponding Author
-**Pei-Sze Tan**  
-School of Information Technology  
-Monash University Malaysia  
-Email: tan.peisze@monash.edu  
+
 
 ### Technical Support
 For technical issues or dataset access problems:
